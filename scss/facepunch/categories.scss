@@ -20,7 +20,6 @@
       background-image: url(https://files.facepunch.com/garry/d250f3d2-b679-4b04-ae66-59aa77f6e8eb.png);
       box-sizing: border-box;
       display: flex;
-      height: 150px;
       margin: 0;
       overflow: hidden;
       position: relative;
@@ -45,7 +44,6 @@
 
       .category-logo {
         align-self: flex-start;
-        background-color: rgba(#000, 0.3);
         width: 64px;
         height: 64px;
         margin-right: 1rem;
@@ -94,6 +92,7 @@
         color: $lightblue;
         display: flex;
         font-size: 0.8rem;
+        flex-direction: column;
         justify-content: center;
         overflow: hidden;
         padding: 1rem;
@@ -101,6 +100,17 @@
         text-align: center;
         width: 80px;
         z-index: 2;
+
+        .value {
+          color: #fff;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+
+        .badge-notification {
+          color: $lightblue;
+          font-size: 0.75rem;
+        }
       }
     }
 
@@ -119,7 +129,7 @@
     }
 
     // Set Styling for Sandbox Category (Set to 9)
-    &[data-category-id="5"] {
+    &[data-category-id="9"] {
       .category-head {
         background-image: url(https://files.facepunch.com/garry/9bb26b95-3771-481d-8e2d-1564373de900.png);
         .category-description {
@@ -145,7 +155,7 @@
     }
 
     // Set Styling for Sandbox Category (Set to 5)
-    &[data-category-id="1"] {
+    &[data-category-id="5"] {
       .category-head {
         background-image: url(https://files.facepunch.com/garry/f14fdb16-aa6c-491c-aaaa-f20a6c19ccf8.png);
       }
