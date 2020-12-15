@@ -56,6 +56,7 @@
         width: auto;
         width: -webkit-fill-available;
         padding: 0;
+        border-radius: 8px;
 
         .cooked {
           margin: 1.5rem 0;
@@ -146,9 +147,15 @@
   border-top: 0;
   border-radius: 4px;
   margin-bottom: 0.5rem;
+  padding: 1rem;
 
   .small-action-desc {
     color: var(--primary-low-mid);
+
+    a.trigger-user-card {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .topic-avatar {
