@@ -28,18 +28,6 @@ body {
     margin-top: 2rem;
     margin-bottom: 5rem;
   }
-
-  // When docked, draw the background, lift up
-  .d-header-wrap.fixed header {
-    padding-top: 0;
-
-    &:before {
-      height: 55px;
-      opacity: 1;
-      transition: all 0.1s 0.1s ease-in;
-      backdrop-filter: blur(5px);
-    }
-  }
 }
 
 @media screen and (min-width: 925px) {
