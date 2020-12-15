@@ -1,0 +1,19 @@
+$darkblue: #171928;
+$lightblue: #888cb1;
+$brightblue: #03a9f4;
+$fpred: #ec1c24;
+$offwhite: #f7f7ff;
+$lightestblue: #f3f4ff;
+$lightestblue-hover: darken($lightestblue, 2%);
+
+$rust: #ce422b;
+$gmod: #1194f0;
+$sandbox: #ed207b;
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
+
+:root {
+  --font-family: "Roboto", Helvetica, Arial, sans-serif;
+  --heading-font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
