@@ -265,54 +265,62 @@
         justify-content: center;
         align-items: center;
 
+        > :first-child {
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          overflow: hidden;
+        }
+
+        > :last-child {
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          overflow: hidden;
+        }
+
         .topic-statuses {
+          float: none;
           margin: 0;
           padding: 0;
-          float: none;
 
-          .topic-status {
+          .topic-status,
+          a {
             background-color: $lightestblue;
-            border-radius: 4px;
-            margin-right: 4px;
-            padding-left: 4px;
-            padding-right: 4px;
-            min-height: 26px;
-            box-sizing: border-box;
             display: flex;
             align-items: center;
-            justify-content: center;
+            padding: 0 4px;
+            margin: 0;
+            transition: all 0.2s ease;
+            min-height: 26px;
 
             > svg {
               color: $lightblue;
             }
-          }
 
-          a {
-            align-items: center;
-            background-color: $gmod;
-            border-radius: 4px;
-            display: flex;
-            color: #fff;
-            justify-content: center;
-            margin: 0;
-            height: 20px;
-            padding: 2px 4px;
-            margin-right: 2px;
+            &:hover {
+              background-color: $lightestblue-hover;
+              color: $brightblue;
+              padding: 0 8px;
+
+              svg {
+                color: $brightblue;
+              }
+            }
           }
         }
 
         a.title {
           align-items: center;
           background-color: $lightestblue;
-          border-radius: 4px;
+          box-sizing: border-box;
           color: var(--primary);
           display: flex;
           flex-grow: 1;
           font-weight: bold;
           padding: 0.25rem 0.5rem;
-          margin-right: 2px;
+          margin-right: 0;
           height: 20px;
           transition: all 0.2s ease;
+          min-height: 26px;
 
           &:hover {
             background-color: $lightestblue-hover;
@@ -328,13 +336,14 @@
         .last-posted-at {
           align-items: center;
           background-color: $lightestblue;
-          border-radius: 4px;
           display: flex;
           height: 20px;
           padding: 0.25rem;
+          box-sizing: border-box;
           text-align: center;
-          width: 40px;
+          width: 50px;
           transition: all 0.2s ease;
+          min-height: 26px;
 
           &:hover {
             background-color: $lightestblue-hover;
