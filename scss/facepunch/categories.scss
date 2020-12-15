@@ -295,7 +295,9 @@
             > svg {
               color: $lightblue;
             }
+          }
 
+          a.topic-status {
             &:hover {
               background-color: $lightestblue-hover;
               color: $brightblue;
