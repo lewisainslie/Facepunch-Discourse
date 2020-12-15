@@ -326,6 +326,7 @@
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          width: 100%;
 
           &:hover {
             background-color: $lightestblue-hover;
