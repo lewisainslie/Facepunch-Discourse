@@ -202,16 +202,22 @@
           }
 
           span.badge-category {
+            align-items: center;
             background-color: $lightestblue;
             border-radius: 4px;
+            display: flex;
             padding: 0.25rem;
+            min-width: 200px;
             color: $darkblue;
             font-weight: bold;
             transition: all 0.2s ease;
 
+            > svg {
+              margin-left: 4px;
+            }
+
             .category-name {
               color: $darkblue;
-              min-width: 200px;
               font-size: 1rem;
               margin: 0;
               padding: 0.2rem;
@@ -261,6 +267,23 @@
           margin: 0;
           padding: 0;
           float: none;
+
+          .topic-status {
+            background-color: $lightestblue;
+            border-radius: 4px;
+            margin-right: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            min-height: 26px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > svg {
+              color: $lightblue;
+            }
+          }
 
           a {
             align-items: center;
