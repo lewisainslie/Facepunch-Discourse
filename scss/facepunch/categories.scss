@@ -256,6 +256,7 @@
       padding: 1rem;
       text-align: left;
       width: 100%;
+      max-width: 450px;
 
       > .featured-topic {
         display: flex;
@@ -315,14 +316,16 @@
           background-color: $lightestblue;
           box-sizing: border-box;
           color: var(--primary);
-          display: flex;
-          flex-grow: 1;
+          display: block;
           font-weight: bold;
           padding: 0.25rem 0.5rem;
           margin-right: 0;
           height: 20px;
           transition: all 0.2s ease;
           min-height: 26px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
 
           &:hover {
             background-color: $lightestblue-hover;
