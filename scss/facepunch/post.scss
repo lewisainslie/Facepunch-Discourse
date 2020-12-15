@@ -127,9 +127,16 @@
 }
 
 // Gap (Hidden reply / deleted)
-.gap {
+.gap,
+.time-gap {
   background-color: rgba($darkblue, 0.7);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
   padding: 1rem;
+
+  .small-action-desc.time-gap {
+    padding: 0;
+  }
 }
 
 // Small Action (Locked, pinned etc)
