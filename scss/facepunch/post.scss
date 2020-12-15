@@ -57,6 +57,10 @@
         width: -webkit-fill-available;
         padding: 0;
 
+        .cooked {
+          margin: 1.5rem 0;
+        }
+
         .topic-meta-data {
           background-color: $offwhite;
           margin: 0;
@@ -86,6 +90,71 @@
           padding: 0 1.5rem;
         }
       }
+    }
+  }
+}
+
+// Side scrollbar
+.timeline-container {
+  .topic-timeline {
+    // Draggable Handle
+    .timeline-handle {
+      background-color: var(--success);
+    }
+
+    // Path
+    .timeline-scrollarea {
+      border-left: 2px solid;
+      border-color: rgba($darkblue, 0.7);
+    }
+
+    // Text
+    .start-date,
+    .now-date {
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    }
+    .timeline-scroller-content {
+      border-radius: 4px;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+      .timeline-replies {
+        font-size: 1rem;
+      }
+      .timeline-ago {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+// Gap (Hidden reply / deleted)
+.gap {
+  background-color: rgba($darkblue, 0.7);
+  padding: 1rem;
+}
+
+// Small Action (Locked, pinned etc)
+.archetype-regular .small-action,
+.small-action {
+  background-color: rgba($darkblue, 0.7);
+  border-top: 0;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+
+  .small-action-desc {
+    color: var(--primary-low-mid);
+  }
+
+  .topic-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 0;
+
+    > svg {
+      font-size: 1.25rem;
+      color: var(--primary-low-mid);
+      width: 32px;
     }
   }
 }
