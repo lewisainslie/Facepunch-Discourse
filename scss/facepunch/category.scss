@@ -12,6 +12,7 @@ body {
       border-radius: 0 0 8px 8px;
     }
 
+    // Category Header (With Logo).
     .category-heading {
       padding: 2rem;
       border-radius: 9px 9px 0 0;
@@ -34,6 +35,14 @@ body {
           rgba($darkblue, 0.5) 60%,
           rgba($darkblue, 0.7) 100%
         );
+
+        .category-logo {
+          margin-right: 1rem;
+        }
+
+        p {
+          color: #fff;
+        }
       }
 
       .category-logo,
