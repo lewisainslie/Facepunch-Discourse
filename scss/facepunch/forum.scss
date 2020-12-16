@@ -116,6 +116,29 @@ table.topic-list {
             opacity: 0.4;
           }
         }
+
+        // Posters
+        &.posters {
+          a {
+            margin-right: 0;
+            float: none;
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          img {
+            border: 2px solid rgba($brightblue, 0);
+            width: 20px;
+            height: 20px;
+            transition: all 0.2s ease;
+
+            &:hover {
+              border: 2px solid rgba($brightblue, 1);
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
       }
     }
   }
