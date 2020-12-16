@@ -229,22 +229,3 @@ table.topic-list {
     }
   }
 }
-
-.reviewable,
-body.admin-interface #main-outlet,
-body.badges-page #main-outlet,
-body.users-page #main-outlet,
-body.user-activity-page #main-outlet,
-body.user-summary-page #main-outlet,
-body.user-invites-page #main-outlet,
-body.user-preferences-page #main-outlet,
-body.static-faq #main-outlet,
-body.about-page #main-outlet,
-body.static-tos #main-outlet,
-body.static-privacy #main-outlet,
-body.tags-page #main-outlet,
-body.groups-page #main-outlet {
-  background-color: var(--secondary);
-  padding: 2rem 2rem;
-  border-radius: 9px;
-}

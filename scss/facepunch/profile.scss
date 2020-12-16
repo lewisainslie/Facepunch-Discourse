@@ -1,2 +1,24 @@
-.profile {
+.reviewable,
+body.admin-interface,
+body.badges-page,
+body.users-page,
+body.user-activity-page,
+body.user-summary-page,
+body.user-invites-page,
+body.user-preferences-page,
+body.static-faq,
+body.about-page,
+body.static-tos,
+body.user-notifications-page,
+body.user-messages-page,
+body.user-badges-page,
+body.user-preferences-page,
+body.static-privacy,
+body.tags-page,
+body.groups-page {
+  #main-outlet {
+    background-color: var(--secondary);
+    border-radius: 9px;
+    padding: 2rem 2rem;
+  }
 }
