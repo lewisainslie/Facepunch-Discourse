@@ -24,3 +24,18 @@ body.groups-page {
     padding: 2rem 2rem;
   }
 }
+
+.topic-list-bottom {
+  background-color: rgba($darlblue, 0.2);
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+  flex-direction: row-reverse;
+
+  .footer-message {
+    flex: 1;
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+}
