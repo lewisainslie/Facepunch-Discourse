@@ -18,6 +18,15 @@ body {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
       }
+
+      div.list-controls {
+        margin-bottom: 0;
+        border-radius: 8px 8px 0 0;
+
+        #navigation-bar li:first-of-type a {
+          border-radius: 7px 0 0 0 !important;
+        }
+      }
     }
 
     // Sandbox Styles
@@ -89,15 +98,6 @@ body {
       p {
         color: #fff;
         position: relative;
-      }
-    }
-
-    div.list-controls {
-      margin-bottom: 0 !important;
-      border-radius: 8px 8px 0 0 !important;
-
-      #navigation-bar li:first-of-type a {
-        border-radius: 7px 0 0 0 !important;
       }
     }
 
