@@ -26,12 +26,12 @@ body.groups-page {
 }
 
 .topic-list-bottom {
+  align-items: center;
   background-color: rgba($darkblue, 0.2);
   border-radius: 8px;
-  align-items: center;
   display: flex;
-  padding: 1rem;
   flex-direction: row-reverse;
+  padding: 1rem;
 
   .footer-message {
     flex: 1;
