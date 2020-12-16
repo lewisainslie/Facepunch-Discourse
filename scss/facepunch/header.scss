@@ -102,7 +102,7 @@
 #main-outlet > .list-controls {
   background-color: $darkblue;
   margin-bottom: 1rem;
-  border-radius: 8px;
+  border-radius: $radius;
 
   .navigation-container .category-breadcrumb {
     display: none;
@@ -118,8 +118,8 @@
     transition: all 0.2s ease;
 
     &.dropdown-select-box-header {
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
+      border-top-right-radius: $radius;
+      border-bottom-right-radius: $radius;
     }
 
     .svg-icon {
@@ -142,7 +142,7 @@
   }
 
   ul.nav {
-    border-radius: 8px;
+    border-radius: $radius;
     margin: 0;
     height: 100%;
     overflow: hidden;
