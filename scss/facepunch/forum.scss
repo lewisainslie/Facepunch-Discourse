@@ -94,9 +94,21 @@ table.topic-list {
         // Thread title
         &.main-link {
           .link-top-line {
+            display: block;
+            font-size: 1rem;
             font-weight: bold;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 90%;
+            text-overflow: ellipsis;
+
+            a:hover {
+              color: $brightblue;
+            }
           }
           .link-botton-line {
+            opacity: 0.4;
           }
         }
       }
