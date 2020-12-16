@@ -119,11 +119,11 @@ table.topic-list {
 
         // Posters
         &.posters {
+          width: 150px;
+
           a {
             background-color: #fff;
-            margin-right: 0;
-            display: inline-block;
-            float: none;
+            margin-right: 2px;
             position: relative;
 
             &:last-child {
