@@ -106,11 +106,17 @@ body {
   .category-boxes,
   .category-boxes-with-topics {
     flex-direction: column;
-    width: auto;
 
     @media screen and (min-width: 925px) {
       flex-direction: row;
-      width: 31%;
+
+      .category-box {
+        width: 31%;
+      }
+    }
+
+    .category-box {
+      width: 100%;
     }
   }
 }
