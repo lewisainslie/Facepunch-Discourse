@@ -3,14 +3,14 @@ body {
     // List View (Used on Sandbox)
     &.categories-list {
       div.list-controls {
-        margin-bottom: 0;
-        border-radius: 8px 8px 0 0;
+        margin-bottom: 0 !important;
+        border-radius: 0 !important;
 
         #navigation-bar {
           border-bottom-left-radius: 0;
           border-bottom-right-radius: 0;
           li:first-of-type a {
-            border-radius: 7px 0 0 0 !important;
+            border-radius: 0 !important;
           }
         }
       }
