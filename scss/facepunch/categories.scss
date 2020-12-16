@@ -122,8 +122,11 @@
         background-image: url(https://files.facepunch.com/garry/a4855dbf-5c09-47bd-b950-74a0132e2a9d.png);
       }
 
-      .badge.badge-notification {
-        background-color: $rust !important;
+      .subcategories,
+      .topics {
+        .badge.badge-notification {
+          background-color: $rust !important;
+        }
       }
     }
 
@@ -145,8 +148,11 @@
         }
       }
 
-      .badge.badge-notification {
-        background-color: $gmod !important;
+      .subcategories,
+      .topics {
+        .badge.badge-notification {
+          background-color: $gmod !important;
+        }
       }
     }
 
@@ -155,8 +161,11 @@
       .category-head {
         background-image: url(https://files.facepunch.com/garry/f14fdb16-aa6c-491c-aaaa-f20a6c19ccf8.png);
       }
-      .badge.badge-notification {
-        background-color: $sandbox !important;
+      .subcategories,
+      .topics {
+        .badge.badge-notification {
+          background-color: $sandbox !important;
+        }
       }
     }
 
