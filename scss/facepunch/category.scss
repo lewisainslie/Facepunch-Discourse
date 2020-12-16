@@ -1,5 +1,5 @@
 body {
-  &.categories-list.category {
+  &.category {
     .list-controls {
       margin-bottom: 0;
       border-radius: 8px 8px 0 0;
@@ -12,6 +12,34 @@ body {
       border-radius: 0 0 8px 8px;
     }
 
+    // Sandbox Styles
+    &.category-sb {
+      .category-heading {
+        background-image: url(https://files.facepunch.com/garry/d250f3d2-b679-4b04-ae66-59aa77f6e8eb.png);
+      }
+    }
+
+    // Rust Styles
+    &.category-rust {
+      .category-heading {
+        background-image: url(https://files.facepunch.com/garry/a4855dbf-5c09-47bd-b950-74a0132e2a9d.png);
+      }
+    }
+
+    // Gmod Styles
+    &.category-gmod {
+      .category-heading {
+        background-image: url(https://files.facepunch.com/garry/9bb26b95-3771-481d-8e2d-1564373de900.png);
+      }
+    }
+
+    // Meta
+    &.category-meta {
+      .category-heading {
+        background-image: url(https://files.facepunch.com/garry/d250f3d2-b679-4b04-ae66-59aa77f6e8eb.png);
+      }
+    }
+
     // Category Header (With Logo).
     .category-heading {
       padding: 2rem;
@@ -20,7 +48,6 @@ body {
       overflow: hidden;
       background-size: cover;
       background-position: center;
-      background-image: url(https://files.facepunch.com/garry/d250f3d2-b679-4b04-ae66-59aa77f6e8eb.png);
 
       &:before {
         position: absolute;
@@ -35,10 +62,6 @@ body {
           rgba($darkblue, 0.5) 60%,
           rgba($darkblue, 0.7) 100%
         );
-
-        .category-logo {
-          margin-right: 1rem;
-        }
       }
 
       .category-logo,
@@ -48,6 +71,7 @@ body {
         margin: 0;
         border-radius: 10px;
         position: relative;
+        margin-right: 1rem;
 
         img {
           margin-right: 1rem;
