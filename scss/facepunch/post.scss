@@ -176,3 +176,26 @@
     }
   }
 }
+
+.topic-map {
+  background: transparent;
+  margin: 1rem 0 0 0;
+
+  .map {
+    padding: 1rem;
+
+    nav.buttons {
+      .btn {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .topic-map-expanded {
+    padding: 1rem;
+
+    > section {
+      padding: 1rem;
+    }
+  }
+}
