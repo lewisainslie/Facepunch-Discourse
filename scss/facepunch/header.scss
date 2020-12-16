@@ -99,78 +99,72 @@
   }
 }
 
-body.categories-list,
-body.navigation-topics {
-  #main-outlet {
+#main-outlet > .list-controls {
+  background-color: $darkblue;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+
+  .navigation-container .category-breadcrumb {
+    display: none;
   }
 
-  #main-outlet > .list-controls {
-    background-color: $darkblue;
-    margin-bottom: 1rem;
-    border-radius: 8px;
+  button {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    color: $lightblue;
+    font-family: var(--heading-font-family);
+    margin: 0;
+    transition: none;
 
-    .navigation-container .category-breadcrumb {
-      display: none;
+    .svg-icon {
+      transition: none;
+      width: 0.8rem;
+      height: 0.8rem;
+      color: $lightblue;
     }
 
-    button {
-      padding: 1.2rem;
-      font-size: 0.9rem;
-      color: $lightblue;
-      font-family: var(--heading-font-family);
-      margin: 0;
-      transition: none;
+    &:hover {
+      color: white;
 
       .svg-icon {
-        transition: none;
-        width: 0.8rem;
-        height: 0.8rem;
-        color: $lightblue;
-      }
-
-      &:hover {
         color: white;
-
-        .svg-icon {
-          color: white;
-        }
       }
     }
+  }
 
-    ul.nav {
-      border-radius: 8px;
+  ul.nav {
+    border-radius: 8px;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+
+    li {
       margin: 0;
-      height: 100%;
-      overflow: hidden;
 
-      li {
-        margin: 0;
+      a {
+        background-color: rgba($lightblue, 0);
+        padding: 1.2rem;
+        font-size: 0.9rem;
+        color: $lightblue;
+        font-family: var(--heading-font-family);
+        transition: all 0.2s ease;
 
-        a {
-          background-color: rgba($lightblue, 0);
-          padding: 1.2rem;
-          font-size: 0.9rem;
-          color: $lightblue;
-          font-family: var(--heading-font-family);
-          transition: all 0.2s ease;
-
-          &:hover {
-            background-color: rgba($lightblue, 0.2);
-            color: $gmod;
-            font-weight: bold;
-            padding: 1.2rem 1.75rem;
-          }
-
-          &.active {
-            background-color: white;
-            color: $darkblue;
-            font-weight: bold;
-          }
+        &:hover {
+          background-color: rgba($lightblue, 0.2);
+          color: $gmod;
+          font-weight: bold;
+          padding: 1.2rem 1.75rem;
         }
 
-        li:first-of-type a {
-          border-radius: 7px 0 0 7px;
+        &.active {
+          background-color: white;
+          color: $darkblue;
+          font-weight: bold;
         }
+      }
+
+      li:first-of-type a {
+        border-radius: 7px 0 0 7px;
       }
     }
   }
