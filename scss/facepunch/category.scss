@@ -2,9 +2,17 @@ body {
   &.category {
     // List View (Used on Sandbox)
     &.categories-list {
-      .list-controls {
+      div.list-controls {
         margin-bottom: 0;
         border-radius: 8px 8px 0 0;
+
+        #navigation-bar {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          li:first-of-type a {
+            border-radius: 7px 0 0 0 !important;
+          }
+        }
       }
 
       #header-list-area {
@@ -12,20 +20,6 @@ body {
         padding: 1rem;
         margin-bottom: 1rem;
         border-radius: 0 0 8px 8px;
-      }
-
-      div.list-controls #navigation-bar {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-
-      div.list-controls {
-        margin-bottom: 0;
-        border-radius: 8px 8px 0 0;
-
-        #navigation-bar li:first-of-type a {
-          border-radius: 7px 0 0 0 !important;
-        }
       }
     }
 
