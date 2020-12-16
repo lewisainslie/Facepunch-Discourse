@@ -49,3 +49,19 @@ body.groups-page {
     }
   }
 }
+
+.table.topic-list {
+  background-color: #fff;
+  border-radius: 8px;
+
+  tbody {
+    border: none;
+    tr {
+      border-bottom: 1px solid var(--primary-low);
+      td {
+        background-color: transparent;
+        border: none;
+      }
+    }
+  }
+}
