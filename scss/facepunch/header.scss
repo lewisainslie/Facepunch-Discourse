@@ -109,25 +109,29 @@
   }
 
   button {
+    background-color: rgba($lightblue, 0);
     padding: 1.2rem;
     font-size: 0.9rem;
     color: $lightblue;
     font-family: var(--heading-font-family);
     margin: 0;
-    transition: none;
+    transition: all 0.2s ease;
 
     .svg-icon {
       transition: none;
       width: 0.8rem;
       height: 0.8rem;
       color: $lightblue;
+      transition: all 0.2s ease;
     }
 
     &:hover {
-      color: white;
+      background-color: rgba($lightblue, 0.2);
+      padding: 1.2rem 1.75rem;
+      color: $brightblue;
 
       .svg-icon {
-        color: white;
+        color: $brightblue;
       }
     }
   }
@@ -151,7 +155,7 @@
 
         &:hover {
           background-color: rgba($lightblue, 0.2);
-          color: $gmod;
+          color: $brightblue;
           font-weight: bold;
           padding: 1.2rem 1.75rem;
         }
