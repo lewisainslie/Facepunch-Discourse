@@ -84,6 +84,21 @@ table.topic-list {
         border-bottom: 0;
       }
 
+      &.topic-list-item-separator {
+        background-color: var(--primary-low);
+
+        td {
+          padding: 1px;
+        }
+
+        span {
+          background-color: var(--primary-low);
+          border-radius: $radius-half;
+          color: $darkblue;
+          font-family: var(--heading-font-family);
+        }
+      }
+
       td {
         background-color: transparent;
         border-bottom: 0 !important;
