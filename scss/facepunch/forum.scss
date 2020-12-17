@@ -144,8 +144,34 @@ table.topic-list {
               }
             }
           }
-          .link-botton-line {
-            opacity: 0.4;
+          .link-bottom-line {
+            opacity: 0.5;
+            transition: all 0.2s ease;
+
+            &:hover {
+              opacity: 1;
+            }
+
+            .badge-wrapper.box {
+              .badge-category-parent-bg {
+                display: none;
+              }
+              .badge-category-bg {
+                left: 0;
+                width: auto;
+              }
+              .badge-category.clear-badge {
+                margin-left: 0;
+                padding: 0 2px;
+                transition: all 0.2s ease;
+              }
+
+              &:hover {
+                .badge-category.clear-badge {
+                  padding: 0 4px;
+                }
+              }
+            }
           }
         }
 
