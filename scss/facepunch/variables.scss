@@ -13,6 +13,15 @@ $sandbox: #ed207b;
 $radius: 8px;
 $radius-half: 4px;
 
+// Responsive breakpoints
+$gap: 32px !default;
+$tablet: 769px !default;
+$desktop: 960px + (2 * $gap) !default;
+$widescreen: 1152px + (2 * $gap) !default;
+$widescreen-enabled: true !default;
+$fullhd: 1344px + (2 * $gap) !default;
+$fullhd-enabled: true !default;
+
 @import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap);
 

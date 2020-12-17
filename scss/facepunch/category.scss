@@ -105,18 +105,12 @@ body {
 
   .category-boxes,
   .category-boxes-with-topics {
-    flex-direction: column;
-
-    @media screen and (min-width: 925px) {
-      flex-direction: row;
+    @media screen and (max-width: $tablet - 1px) {
+      flex-direction: column;
 
       .category-box {
-        width: 31%;
+        width: 100%;
       }
-    }
-
-    .category-box {
-      width: 100%;
     }
   }
 }
