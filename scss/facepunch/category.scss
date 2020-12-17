@@ -112,5 +112,15 @@ body {
         width: 100%;
       }
     }
+
+    .category-box {
+      .category-box-heading {
+        a {
+          h3 {
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 }

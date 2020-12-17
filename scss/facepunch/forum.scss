@@ -129,6 +129,20 @@ table.topic-list {
             a:hover {
               color: $brightblue;
             }
+
+            .topic-post-badges {
+              .badge {
+                &.new-topic {
+                  top: -2px;
+
+                  &:before {
+                    background: var(--success);
+                    width: 6px;
+                    height: 6px;
+                  }
+                }
+              }
+            }
           }
           .link-botton-line {
             opacity: 0.4;
