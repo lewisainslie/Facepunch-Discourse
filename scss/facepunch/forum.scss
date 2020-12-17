@@ -87,6 +87,7 @@ table.topic-list {
       td {
         background-color: transparent;
         border-bottom: 0 !important;
+        white-space: nowrap;
 
         &:first-of-type {
           padding-left: 2rem;
@@ -103,10 +104,13 @@ table.topic-list {
             font-size: 1rem;
             font-weight: bold;
             margin-bottom: 4px;
-            white-space: nowrap;
             overflow: hidden;
             max-width: 90%;
             text-overflow: ellipsis;
+
+            a.title {
+              font-family: var(--heading-font-family);
+            }
 
             a:hover {
               color: $brightblue;
