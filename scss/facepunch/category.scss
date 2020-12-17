@@ -84,6 +84,11 @@ body {
         position: relative;
         margin-right: 1rem;
 
+        @media screen and (max-width: $tablet - 1px) {
+          width: 40px;
+          height: 40px;
+        }
+
         img {
           margin-right: 1rem;
         }
@@ -92,6 +97,10 @@ body {
       p {
         color: #fff;
         position: relative;
+
+        @media screen and (max-width: $tablet - 1px) {
+          font-size: 1rem;
+        }
       }
     }
 

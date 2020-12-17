@@ -228,3 +228,9 @@ table.topic-list {
     }
   }
 }
+
+@media screen and (max-width: $tablet - 1px) {
+  .list-area {
+    margin-bottom: 0;
+  }
+}
