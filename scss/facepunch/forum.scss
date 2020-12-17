@@ -145,11 +145,22 @@ table.topic-list {
             }
           }
           .link-bottom-line {
-            opacity: 0.5;
+            opacity: 0.7;
             transition: all 0.2s ease;
 
             &:hover {
               opacity: 1;
+            }
+
+            .discourse-tags {
+              a.discourse-tag.box {
+                padding: 2px 8px;
+                transition: all 0.2s ease;
+
+                &:hover {
+                  padding: 2px 10px;
+                }
+              }
             }
 
             .badge-wrapper.box {
