@@ -1,16 +1,60 @@
 // Default variables
 @import "facepunch/variables";
 
-// General Styles (Body etc)
-@import "facepunch/general";
-@import "facepunch/form";
-@import "facepunch/header";
-@import "facepunch/footer";
+// Defaults
+@import "facepunch/mobile/header";
+@import "facepunch/mobile/categories";
 
-// Views
-@import "facepunch/categories"; // Main Homepage View
-@import "facepunch/category"; // Individual Category View
-@import "facepunch/forum"; // Forum View
-@import "facepunch/post"; // Individual Post View
-@import "facepunch/profile"; // User Profile
-@import "facepunch/search"; // Search duh
+body {
+  background-image: url(https://files.facepunch.com/garry/ef5a054d-5a50-4dc3-8de3-61c34835c6a0.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+
+  &:before {
+    content: " ";
+    background-color: #90afff47;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.reviewable,
+body.admin-interface,
+body.badges-page,
+body.users-page,
+body.user-activity-page,
+body.user-summary-page,
+body.user-invites-page,
+body.user-preferences-page,
+body.static-faq,
+body.about-page,
+body.static-tos,
+body.user-notifications-page,
+body.user-messages-page,
+body.user-badges-page,
+body.user-preferences-page,
+body.static-privacy,
+body.tags-page,
+body.search-page,
+body.groups-page {
+  #main-outlet {
+    background-color: var(--secondary);
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+}
+
+#main-outlet {
+  padding: 0;
+}
+
+:root {
+  --header_background: #171928;
+}

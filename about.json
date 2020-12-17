@@ -1,5 +1,5 @@
 {
-  "name": "FacepunchTheme",
+  "name": "Facepunch Theme",
   "component": false,
   "license_url": null,
   "about_url": null,
@@ -9,7 +9,7 @@
   "maximum_discourse_version": null,
   "assets": {},
   "color_schemes": {
-    "Light": {
+    "Facepunch_Default": {
       "primary": "171727",
       "secondary": "ffffff",
       "tertiary": "171727",

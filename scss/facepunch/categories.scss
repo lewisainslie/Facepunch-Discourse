@@ -88,10 +88,6 @@
           margin: 0 0 0.5rem 0;
           padding: 0;
           overflow: visible;
-
-          @media screen and (max-width: $tablet - 1px) {
-            font-size: 1.5rem;
-          }
         }
 
         .category-description {
@@ -99,10 +95,6 @@
           font-size: 1rem;
           margin: 0;
           padding: 0;
-
-          @media screen and (max-width: $tablet - 1px) {
-            margin-bottom: 1rem;
-          }
         }
       }
 
