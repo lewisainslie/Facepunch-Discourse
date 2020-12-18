@@ -106,8 +106,8 @@
   border-radius: $radius;
 
   .navigation-container {
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
 
     .category-breadcrumb {
       display: none;
@@ -155,8 +155,6 @@
     margin: 0;
     height: 100%;
     overflow: hidden;
-    display: flex;
-    flex: 1;
 
     li {
       margin: 0;
