@@ -20,9 +20,16 @@ body.groups-page {
   #main-outlet {
     background-color: var(--secondary);
     box-sizing: border-box;
-    border-radius: 9px;
+    border-radius: $radius;
     padding: 2rem 2rem;
   }
+}
+
+.reviewable {
+  background-color: var(--secondary);
+  box-sizing: border-box;
+  border-radius: $radius;
+  padding: 2rem 2rem;
 }
 
 .topic-list-bottom {
