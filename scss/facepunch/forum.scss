@@ -44,6 +44,14 @@ body.groups-page {
     color: var(--secondary);
     border-top: none;
     border-bottom: 1px solid rgba(var(--secondary-rgb), 0.2);
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    p {
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
   }
 
   .btn-default {
@@ -59,6 +67,7 @@ body.groups-page {
       color: var(--secondary);
       margin-bottom: 0;
       margin-right: 1rem;
+      padding: 1rem;
     }
   }
 }
