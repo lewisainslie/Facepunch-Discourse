@@ -34,11 +34,17 @@ body.groups-page {
 
 .topic-list-bottom {
   align-items: center;
-  background-color: rgba($darkblue, 0.5);
+  background-color: rgba($darkblue, 0.7);
   border-radius: $radius;
   display: flex;
   flex-direction: row-reverse;
   padding: 1rem;
+
+  div.education {
+    color: var(--secondary);
+    border-top: none;
+    border-bottom: 1px solid rgba(var(--secondary-rgb), 0.2);
+  }
 
   .btn-default {
     margin: 0;
