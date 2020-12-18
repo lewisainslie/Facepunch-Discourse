@@ -85,23 +85,23 @@ table.topic-list {
   > tbody {
     border: none;
     tr {
-      border-bottom: 1px solid var(--primary-low);
+      border-bottom: 1px solid var(--highlight);
 
       &:last-of-type {
         border-bottom: 0;
       }
 
       &.topic-list-item-separator {
-        background-color: var(--primary-low);
+        background-color: var(--highlight);
 
         td {
           padding: 1px;
         }
 
         span {
-          background-color: var(--primary-low);
+          background-color: var(--highlight);
           border-radius: $radius-half;
-          color: $darkblue;
+          color: var(--primary);
           font-family: var(--heading-font-family);
         }
       }
